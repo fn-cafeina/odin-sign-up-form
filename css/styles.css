@@ -77,9 +77,70 @@ main {
   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
+.section-two > p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+
+#sign-up-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#sign-up-form > div {
+  display: flex;
+  gap: 20px;
+}
+
+#sign-up-form > div > div {
+  display: flex;
+  flex-direction: column;
+}
+
 .section-three {
   flex: 1;
   padding: 50px 30px;
   background-color: #f9fafb;
   flex-direction: column;
+}
+
+.section-three > button {
+  margin-bottom: 10px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 500;
+  background-color: #596d48;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.section-three a {
+  color: #596d48;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+input {
+  border: 1px solid #e5e7eb;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+input[type="password"]:invalid {
+  border: 1px solid rgb(255, 94, 94);
+}
+
+input:focus {
+  border: 1px solid rgb(94, 94, 255);
+  outline: none;
 }
